@@ -67,7 +67,7 @@ and (max-width : 1024px) {
 and (min-width : 1024px)
 and (max-width : 1280px) {
   .hero {
-    width: 1020px;
+    width: 940px;
     background: url(/background-image2x.jpg) center center fixed;
     background-size: cover;
   }
@@ -76,7 +76,7 @@ and (max-width : 1280px) {
 @media screen
 and (min-width : 1280px) {
   .hero {
-    width: 1250px;
+    width: 940px;
     background: url(/background-image2x.jpg);
     background-size: contain;
   }
