@@ -1,0 +1,119 @@
+body {
+  text-align: center;
+}
+
+.logo {
+  padding-top: 50px;
+}
+
+@media screen
+and (min-width : 1024px) {
+  .hero {
+    width: 1020px;
+  }
+}
+
+@media screen
+and (min-width : 100px)
+and (max-width : 480px) {
+  .hero {
+    width: 320px;
+  }
+}
+
+@media screen
+and (min-width : 896px)
+and (max-width : 1024px) {
+  .hero {
+    width: 900px;
+  }
+}
+
+@media screen
+and (min-width : 768px)
+and (max-width : 896px) {
+  .hero {
+    width: 700px;
+  }
+}
+
+.hero {
+  background-image: url(/background-image.jpg);
+  background-repeat: no-repeat;
+  text-align: center;
+  /*height: 450px;*/
+  margin: 0px auto;
+}
+
+.title-text {
+  color: white;
+  font-size: 25px;
+  margin: 20px;
+}
+
+.callout {
+  background-color: #f1f0e4;
+  width: 460px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+}
+
+.callout .text {
+  margin: 10px;
+  text-align: justify;
+}
+
+.controls {
+  margin: 30px 10px
+}
+
+.controls label {
+  float: left;
+  width: 150px;
+  text-align: right;
+  padding-top: 7px;
+  padding-right: 20px;
+}
+
+.controls input {
+  float: left;
+  width: 225px;
+  height: 26px;
+  border: 1px solid white;
+  padding: 5px;
+}
+
+.orange {
+  color: #e89779;
+}
+
+input[type="submit"] {
+  background-color: #1671bc;
+  color: white;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-size: 22px;
+  border: none;
+  margin-bottom: 10px;
+  margin-left: 145px;
+  width: 240px;
+}
+
+.footer-image {
+  margin: 20px;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
