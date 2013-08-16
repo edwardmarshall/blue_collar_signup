@@ -11,7 +11,7 @@ SERVER_PORT = 587
 class Mailer
   def self.send_signup(signup)
     mail_content = Mustache.render(File.read('email.html'),
-                                   :from_address => 'no-reply@bluecollarcredit.com',
+                                   :from_address => 'do_not_reply@bluecollarcredit.com',
                                    :to_address => signup.email,
                                    :to_name => signup.name)
     send_email(mail_content, signup.email)
