@@ -77,8 +77,8 @@ and (max-width : 1280px) {
 and (min-width : 1280px) {
   .hero {
     width: 1250px;
-    background: url(/background-image2x.jpg) center center fixed;
-    background-size: cover;
+    background: url(/background-image2x.jpg);
+    background-size: contain;
   }
 }
 
