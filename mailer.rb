@@ -3,7 +3,7 @@ require 'time'
 require 'mustache'
 
 FROM_ADDRESS = 'leads@bluecollarcredit.com'
-FROM_ADDRESS_PASSWORD = 'leadspassword'
+FROM_ADDRESS_PASSWORD = 'bluecollar2011'
 NOTIFICATION_ADDRESS = 'leads@bluecollarcredit.com'
 SERVER_ADDRESS = 'smtp.gmail.com'
 SERVER_PORT = 587
