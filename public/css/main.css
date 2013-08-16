@@ -7,6 +7,63 @@ body {
 }
 
 @media screen
+and (max-width : 480px) {
+  .hero {
+    width: 320px;
+    background-image: url(/background-image.jpg);
+  }
+  body .callout {
+    width: auto;
+  }
+
+  body input[type="submit"] {
+    margin-left: auto;
+  }
+
+  body .title-text {
+    font-size: 22px;
+  }
+
+  body .controls input {
+    width: 285px;
+  }
+
+  body .controls label {
+    width: auto;
+    text-align: right;
+    padding-top: 7px;
+    padding-right: 20px;
+  }
+}
+
+@media screen
+and (min-width : 480px)
+and (max-width : 768px) {
+  .hero {
+    width: 460px;
+    background-image: url(/background-image.jpg);
+  }
+}
+
+@media screen
+and (min-width : 768px)
+and (max-width : 896px) {
+  .hero {
+    width: 700px;
+    background-image: url(/background-image.jpg);
+  }
+}
+
+@media screen
+and (min-width : 896px)
+and (max-width : 1024px) {
+  .hero {
+    width: 900px;
+    background-image: url(/background-image.jpg);
+  }
+}
+
+@media screen
 and (min-width : 1024px)
 and (max-width : 1280px) {
   .hero {
@@ -22,42 +79,6 @@ and (min-width : 1280px) {
     width: 1250px;
     background: url(/background-image2x.jpg) center center fixed;
     background-size: cover;
-  }
-}
-
-@media screen
-and (min-width : 100px)
-and (max-width : 480px) {
-  .hero {
-    width: 320px;
-    background-image: url(/background-image.jpg);
-  }
-}
-
-@media screen
-and (min-width : 480px)
-and (max-width : 768px) {
-  .hero {
-    width: 450px;
-    background-image: url(/background-image.jpg);
-  }
-}
-
-@media screen
-and (min-width : 896px)
-and (max-width : 1024px) {
-  .hero {
-    width: 900px;
-    background-image: url(/background-image.jpg);
-  }
-}
-
-@media screen
-and (min-width : 768px)
-and (max-width : 896px) {
-  .hero {
-    width: 700px;
-    background-image: url(/background-image.jpg);
   }
 }
 
