@@ -16,10 +16,10 @@ end
 set :public_folder, 'public'
 
 class User
-  attr_accessor :email, :name, :phone
+  attr_accessor :email, :name, :telephone
   def initialize(params)
     self.email = params['email']
     self.name = params['name']
-    self.phone = params['phone']
+    self.telephone = params['telephone']
   end
 end

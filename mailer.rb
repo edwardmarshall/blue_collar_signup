@@ -27,7 +27,7 @@ class Mailer
                                    :to_address => NOTIFICATION_ADDRESS,
                                    :name => signup.name,
                                    :email => signup.email,
-                                   :telephone => signup.phone)
+                                   :telephone => signup.telephone)
     smtp = Net::SMTP.new(SERVER_ADDRESS, SERVER_PORT)
     smtp.enable_starttls
     smtp.start(SERVER_ADDRESS,FROM_ADDRESS,FROM_ADDRESS_PASSWORD,:login) do
