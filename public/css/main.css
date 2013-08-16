@@ -7,9 +7,21 @@ body {
 }
 
 @media screen
-and (min-width : 1024px) {
+and (min-width : 1024px)
+and (max-width : 1280px) {
   .hero {
     width: 1020px;
+    background: url(/background-image2x.jpg) center center fixed;
+    background-size: cover;
+  }
+}
+
+@media screen
+and (min-width : 1280px) {
+  .hero {
+    width: 1250px;
+    background: url(/background-image2x.jpg) center center fixed;
+    background-size: cover;
   }
 }
 
@@ -18,6 +30,16 @@ and (min-width : 100px)
 and (max-width : 480px) {
   .hero {
     width: 320px;
+    background-image: url(/background-image.jpg);
+  }
+}
+
+@media screen
+and (min-width : 480px)
+and (max-width : 768px) {
+  .hero {
+    width: 450px;
+    background-image: url(/background-image.jpg);
   }
 }
 
@@ -26,6 +48,7 @@ and (min-width : 896px)
 and (max-width : 1024px) {
   .hero {
     width: 900px;
+    background-image: url(/background-image.jpg);
   }
 }
 
@@ -34,14 +57,14 @@ and (min-width : 768px)
 and (max-width : 896px) {
   .hero {
     width: 700px;
+    background-image: url(/background-image.jpg);
   }
 }
 
 .hero {
-  background-image: url(/background-image.jpg);
   background-repeat: no-repeat;
   text-align: center;
-  /*height: 450px;*/
+  height: 450px;
   margin: 0px auto;
 }
 
@@ -60,7 +83,7 @@ and (max-width : 896px) {
 }
 
 .callout .text {
-  margin: 10px;
+  margin: 15px;
   text-align: justify;
 }
 
@@ -102,6 +125,11 @@ input[type="submit"] {
 
 .footer-image {
   margin: 20px;
+}
+
+.spinner {
+  width: 20px;
+  margin: 10px;
 }
 
 .clearfix:before,

@@ -24,20 +24,20 @@
         <div class="title-text"> Bank won't finance your lifestyle? We can help. </div>
         <div class="callout clearfix">
           <div class="text">
-            Everybody has different credit needs, so please fill out the box below and we will contact you to get your score <span class='orange'>climbing now!</span>
+            Everybody has different credit needs, so please fill out the box below and we will contact you to get your score climbing now!
           </div>
-          <form>
+          <form method="post" action="/signup">
             <div class="controls clearfix">
               <label for="name">Full Name:</label>
-              <input id='name' type='text' />
+              <input id='name' name='name' type='text' />
             </div>
             <div class="controls clearfix">
               <label for="email">Email Address:</label>
-              <input id='email' type='email' />
+              <input id='email' name='email' type='email' />
             </div>
             <div class="controls clearfix">
               <label for="telephone">Phone Number:</label>
-              <input id='telephone' type='tel' />
+              <input id='telephone' name='telephone' type='tel' />
             </div>
             <input type="submit" value="Let's get started.">
           </form>
