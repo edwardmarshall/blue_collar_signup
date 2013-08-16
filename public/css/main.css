@@ -84,7 +84,7 @@ and (max-width : 896px) {
 
 .callout .text {
   margin: 15px;
-  text-align: justify;
+  font-size: 15px;
 }
 
 .controls {
@@ -105,6 +105,17 @@ and (max-width : 896px) {
   height: 26px;
   border: 1px solid white;
   padding: 5px;
+}
+
+.controls input.error {
+  border: 1px solid red;
+}
+
+.hide {
+  display: none;
+}
+.error-message {
+  font-weight: bolder;
 }
 
 .orange {
