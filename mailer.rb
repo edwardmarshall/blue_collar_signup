@@ -2,7 +2,7 @@ require 'net/smtp'
 require 'time'
 require 'mustache'
 
-FROM_ADDRESS = 'leads@bluecollarcredit.com'
+FROM_ADDRESS = 'do_not_reply@bluecollarcredit.com'
 FROM_ADDRESS_PASSWORD = 'bluecollar2011'
 NOTIFICATION_ADDRESS = 'leads@bluecollarcredit.com'
 SERVER_ADDRESS = 'smtp.gmail.com'
@@ -11,7 +11,7 @@ SERVER_PORT = 587
 class Mailer
   def self.send_signup(signup)
     mail_content = Mustache.render(File.read('email.html'),
-                                   :from_address => 'do_not_reply@bluecollarcredit.com',
+                                   :from_address => FROM_ADDRESS,
                                    :to_address => signup.email,
                                    :to_name => signup.name)
     send_email(mail_content, signup.email)
